@@ -22,16 +22,18 @@ int main()
 	// Configure GLFW using glad
 	gladLoadGL();
 
-	glClearColor(0.07f, 0.13f, 0.17f, 1.0f);
-	glClear(GL_COLOR_BUFFER_BIT);
-	glfwSwapBuffers(window);
-
 	// Setup viewport
 	glViewport(0, 0, 800, 800);
+
+	glClearColor(0.07f, 0.73f, 0.17f, 1.0f);
+	glClear(GL_COLOR_BUFFER_BIT);
+	glfwSwapBuffers(window);
 
 	// TODO: Make this flash every few seconds
 	while (!glfwWindowShouldClose(window))
 	{
+		
+		glfwSwapBuffers(window);
 		glfwPollEvents();
 	}
 
