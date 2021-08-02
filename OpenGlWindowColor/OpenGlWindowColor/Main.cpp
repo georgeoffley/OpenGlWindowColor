@@ -32,7 +32,8 @@ int main()
 	// TODO: Make this flash every few seconds
 	while (!glfwWindowShouldClose(window))
 	{
-		
+		glClearColor(0.57f, 0.92f, 0.56f, 1.0f);
+		glClear(GL_COLOR_BUFFER_BIT);
 		glfwSwapBuffers(window);
 		glfwPollEvents();
 	}
